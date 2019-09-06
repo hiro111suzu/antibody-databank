@@ -1,0 +1,847 @@
+.	NZ-1
+category	tag system
+antigen	PAtag
+name	NZ-1
+animal	rat
+isotype	IgG2a lambda
+description	PAtagシステム（ペプチドタグシステム）に使用するモノクローナル抗体。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。タンパク質精製については、<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=26872787+24480187" target="_blank">Fujii et al., PEP2014; Fujii et al., JCS2016</a>の２報で詳述。さらに、<a href="http://www.pssj.jp/archives/protocol/purification/affinity_02/affinity_02.html" target="_blank">蛋白質科学会アーカイブ</a>でプロトコールを解説。WBについては、複数の論文で使用例あり。
+pubmed_id	24480187|26872787|16979138|17222411|17616532|17944973|18697734|18707544|20482880|20870153|22283975|22816430|23115013|23690472|25080943|25458834|25826087|26822025|23376717|23524262|26381180|25753205|24403254|24898068|24328739|27788029|28446613|28393893|26902720
+reference	[//www.pssj.jp/archives/protocol/purification/affinity_02/affinity_02.html](PSSJ-archive)
+contact	kato_tohoku
+supplier	[http://www.wako-chem.co.jp/siyaku/product/life/PA_tag/index.htm]($wako)
+
+.	PMab-1
+category	tag system
+antigen	MAPtag
+name	PMab-1
+animal	rat
+isotype	IgG2a kappa
+description	MAPtagシステム（ペプチドタグシステム）に使用するモノクローナル抗体。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。WBについては、PAtagよりも感度が高い。MAPtag抗体はヒト細胞株に反応しないため、膜タンパク質の解析に威力を発揮する。タンパク質精製については、<a href="https://www.ncbi.nlm.nih.gov/pubmed/27801621" target="_blank">Fujii et al., MAB2016</a>で詳述。
+pubmed_id	27801621|27267652|27380308|27564251|29998193
+reference	[http://www.med-tohoku-antibody.com/link/118.htm](press release)
+contact	kato_tohoku
+supplier	[https://absoluteantibody.com/product/anti-map-tag-pmab-1/](absolute antibody)
+
+.	PMab-2
+category	tag system
+antigen	RAPtag
+name	PMab-2
+animal	mouse
+isotype	IgG1 kappa
+description	RAPtagシステム（ペプチドタグシステム）に使用するモノクローナル抗体。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。anti-RAP tag抗体はマウス抗体のため、二次抗体としてanti-mouse IgGを使いたい場合には有用性が高い。タンパク質精製については、<a href="https://www.ncbi.nlm.nih.gov/pubmed/28339303" target="_blank">Fujii et al., MAB2017</a>で詳述。
+pubmed_id	27801621|27267652|27380308|26683179|28339303|30088964
+reference	[http://www.med-tohoku-antibody.com/link/119.htm](press release)
+contact	kato_tohoku
+supplier	[https://absoluteantibody.com/product/anti-rap-tag-pmab-2/](absolute antibody)
+
+.	LpMab-13
+category	tag system
+antigen	PA16tag
+name	LpMab-13
+animal	mouse
+isotype	IgG1 kappa
+description	PA16tagシステム（ペプチドタグシステム）に使用するモノクローナル抗体。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。PAtagの改良型。
+pubmed_id	
+reference	[https://www.sciencedirect.com/science/article/pii/S2405580818300670](C44Mab-5)|[http://www.med-tohoku-antibody.com/reference/01.htm](PMab-202(ref. 155))
+contact	kato_tohoku
+supplier	
+
+.	PMab-1
+category	tag system
+antigen	MAP16tag
+name	PMab-1
+animal	rat
+isotype	IgG2a kappa
+description	MAP16tagシステム（ペプチドタグシステム）に使用するモノクローナル抗体。MAP16タグは16アミノ酸 (PGTGDGMVPPGIEDKI)。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。MAPtagの改良型。
+pubmed_id	
+reference	[http://www.med-tohoku-antibody.com/reference/01.htm](PMab-44_goat(ref. 158))
+contact	kato_tohoku
+supplier	
+
+.	PMab-2, LpMab-7
+category	tag system
+antigen	RAP14tag（ダブルタグ）
+name	PMab-2|LpMab-7
+animal	mouse
+isotype	IgG1 kappa|IgG1
+description	RAP14tagシステム（ペプチドタグシステム）に使用するモノクローナル抗体。RAP14タグは14アミノ酸（RAPtag+DL）。PMab-2とLpMab-7の2つの抗体が認識する。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。RAPtagの改良型。
+pubmed_id	
+reference	[](To be published)
+contact	kato_tohoku
+supplier	
+
+.	PMab-2
+category	tag system
+antigen	RAP16tag
+name	PMab-2
+animal	mouse
+isotype	IgG1 kappa
+description	RAP16tagシステム（ペプチドタグシステム）に使用するモノクローナル抗体。RAP16タグは16アミノ酸。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。RAPtagの改良型。
+pubmed_id	
+reference	[](To be published)
+contact	kato_tohoku
+supplier	
+
+.	PMab-44
+category	tag system
+antigen	BAPtag
+name	PMab-44
+animal	mouse
+isotype	IgG1 kappa
+description	BAPtagシステム（ペプチドタグシステム）に使用するモノクローナル抗体。BAPタグは16アミノ酸。AMED・BINDSの成果。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。ヒト、マウス、ラット、ラビット、イヌ、ネコ、などのあらゆるタンパク質に交差反応性を示さない特異性の高さが特徴。
+pubmed_id	
+reference	[](To be published)
+contact	kato_tohoku
+supplier	
+
+.	LpMab-17
+category	tag system
+antigen	LPtag
+name	LpMab-17
+animal	mouse
+isotype	IgG1 kappa
+description	LPtagシステム（ペプチドタグシステム）に使用するモノクローナル抗体。LPタグは16アミノ酸 (NSVTGIRIEDLPTSES)。AMED・BINDSの成果。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。マウス、ラットなどのげっ歯類の実験に特に有用。
+pubmed_id	
+reference	[http://www.med-tohoku-antibody.com/reference/01.htm](PMab-52_tiger(ref. 156))
+contact	kato_tohoku
+supplier	
+
+.	TMab-2
+category	tag system
+antigen	MBPtag
+name	TMab-2
+animal	rat
+isotype	IgG2b kappa
+description	recognizes maltose-binding proteins
+description_j	maltose-binding proteinを特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	23782684|23376717|23485467|23524262|23750482|25753205
+reference	
+contact	kato_tohoku
+supplier	
+
+.	YM-2
+category	tag system
+antigen	MBPtag
+name	YM-2
+animal	rat
+isotype	IgG2b kappa
+description	maltose-binding proteinを特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=23782684+or+23376717+or+23485467+or+23524262+or+23750482+or+25753205](article)
+contact	kato_tohoku
+supplier	[http://www.funakoshi.co.jp/contents/163540](フナコシ)|[https://www.biolegend.com/en-us/products/purified-anti-maltose-binding-protein-mbp-antibody-11081](BioLegend)
+
+.	LpMab-7
+category	tag system
+antigen	RIEDLtag
+name	LpMab-7
+animal	mouse
+isotype	IgG1 kappa
+description	RIEDLtagシステム（ペプチドタグシステム）に使用するモノクローナル抗体。RIEDLタグは5アミノ酸。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[](To be published)
+contact	kato_tohoku
+supplier	
+
+.	L1Mab-4
+category	PD-L1
+antigen	PD-L1
+name	L1Mab-4
+animal	mouse
+isotype	IgG2b kappa
+description	PD-L1を認識。
+application	IHC, FACS
+pubmed_id	
+reference	[https://www.sciencedirect.com/science/article/pii/S2405580818300049](L1Mab-4)
+contact	kato_tohoku
+supplier	
+
+.	L1Mab-13
+category	PD-L1
+antigen	PD-L1
+name	L1Mab-13
+animal	mouse
+isotype	IgG1 kappa
+description	PD-L1を認識。
+application	IHC, FACS, WB
+pubmed_id	
+reference	[https://www.liebertpub.com/doi/10.1089/mab.2018.0004](L1Mab-13)
+contact	kato_tohoku
+supplier	[https://www.biolegend.com/](BioLegnd)
+
+.	C44Mab-5
+category	CD44
+antigen	CD44s
+name	C44Mab-5
+animal	mouse
+isotype	IgG1 kappa
+description	CD44s (CD44 standard)を特異的に認識。
+application	IHC, FACS
+pubmed_id	
+reference	[https://www.sciencedirect.com/science/article/pii/S2405580818300670](C44Mab-5)
+contact	kato_tohoku
+supplier	[https://www.biolegend.com/](BioLegnd)
+
+.	CMab-43
+category	CD133
+antigen	CD133
+name	CMab-43
+animal	mouse
+isotype	IgG2a kappa
+description	CD133を特異的に認識。
+application	FACS, WB, IHCに有用。
+pubmed_id	
+reference	[http://online.liebertpub.com/doi/abs/10.1089/mab.2017.0031](article)
+contact	kato_tohoku
+supplier	[https://www.cellsignal.com/](CST)|[https://www.bdbiosciences.com/](BD)
+
+.	EMab-51
+category	EGFR
+antigen	EGFR
+name	EMab-51
+animal	mouse
+isotype	IgG1 kappa
+description	EGFRを特異的に認識。
+application	FACS, WB, IHCに有用。
+pubmed_id	
+reference	[http://online.liebertpub.com/doi/full/10.1089/mab.2017.0028](article)
+contact	kato_tohoku
+supplier	[https://www.biolegend.com/](BioLegnd)
+
+.	EMab-134
+category	EGFR
+antigen	EGFR
+name	EMab-134
+animal	mouse
+isotype	IgG1 kappa
+description	EGFRを特異的に認識。
+application	FACS, WB, IHCに有用。
+pubmed_id	
+reference	[http://online.liebertpub.com/doi/full/10.1089/mab.2017.0042](article)
+contact	kato_tohoku
+supplier	[https://www.bdbiosciences.com/](BD)
+
+.	H2Mab-77
+category	HER2
+antigen	HER2
+name	H2Mab-77
+animal	mouse
+isotype	IgG1 kappa
+description	HER2を特異的に認識。
+application	FACS, WB, IHCに有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/28700270](article)
+contact	kato_tohoku
+supplier	[https://www.biolegend.com/](BioLegnd)
+
+.	H2Mab-119
+category	HER2
+antigen	HER2
+name	H2Mab-119
+animal	mouse
+isotype	IgG1 kappa
+description	HER2を特異的に認識。
+application	FACS, WB, IHCに有用。
+pubmed_id	
+reference	[http://online.liebertpub.com/doi/full/10.1089/mab.2017.0050](article)
+contact	kato_tohoku
+supplier	
+
+.	H2Mab-139
+category	HER2
+antigen	HER2
+name	H2Mab-139
+animal	mouse
+isotype	IgG1 kappa
+description	HER2を特異的に認識。
+application	FACS, WB, IHCに有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/29315012](article)
+contact	kato_tohoku
+supplier	
+
+.	DaMab-2
+category	DGK
+antigen	DGKalpha
+name	DaMab-2
+animal	mouse
+isotype	IgG1 kappa
+description	ヒトDGKalphaを特異的に認識。
+application	ICCに有用。
+pubmed_id	
+reference	[http://online.liebertpub.com/doi/abs/10.1089/mab.2017.0023](article)
+contact	kato_tohoku
+supplier	[]((注) 共同研究先の企業からの分譲。)
+
+.	DgMab-6
+category	DGK
+antigen	DGKgamma
+name	DgMab-6
+animal	mouse
+isotype	IgG1 kappa
+description	ヒトDGKgammaを特異的に認識。
+application	ICCに有用。
+pubmed_id	
+reference	[](To be published)
+contact	kato_tohoku
+supplier	[]((注) 共同研究先の企業からの分譲。)
+
+.	AMab-6
+category	ATRX
+antigen	ATRX
+name	AMab-6
+animal	mouse
+isotype	IgG1 kappa
+description	ATRXを特異的に認識。
+application	IHCに有用。
+pubmed_id	
+reference	[http://online.liebertpub.com/doi/full/10.1089/mab.2016.0037](article)
+contact	kato_tohoku
+supplier	
+
+.	TMab-6
+category	TERT
+antigen	hTERT
+name	TMab-6
+animal	mouse
+isotype	IgM kappa
+description	hTERTを特異的に認識。
+application	IHCに有用。
+pubmed_id	
+reference	[https://www.hindawi.com/journals/bmri/aip/7945845/](article)
+contact	kato_tohoku
+supplier	
+
+.	PcMab-47
+category	podocalyxin
+antigen	podocalyxin
+name	PcMab-47
+animal	mouse
+isotype	IgG1 kappa
+description	ヒトポドカリキシンを特異的に認識。
+application	FACS, WB, IHCに有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=PcMab-47](article)
+contact	kato_tohoku
+supplier	
+
+.	XMab-1
+category	xCT
+antigen	マウスxCT
+name	XMab-1
+animal	rat
+isotype	IgG2a kappa
+description	マウスxCTを特異的に認識。
+application	WBに有用。
+pubmed_id	
+reference	
+contact	kato_tohoku
+supplier	
+
+.	XMab-2
+category	xCT
+antigen	マウスxCT
+name	XMab-2
+animal	rat
+isotype	IgG2a kappa
+description	マウスxCTを特異的に認識。
+application	WBに有用。
+pubmed_id	
+reference	
+contact	kato_tohoku
+supplier	
+
+.	XMab-3
+category	xCT
+antigen	マウスxCT
+name	XMab-3
+animal	rat
+isotype	IgG2b kappa
+description	マウスxCTを特異的に認識。
+application	WBに有用。
+pubmed_id	
+reference	
+contact	kato_tohoku
+supplier	
+
+.	CLMab-1
+category	CLEC-2
+antigen	ヒトCLEC-2
+name	CLMab-1
+animal	rat
+isotype	IgG2a kappa
+description	ヒトCLEC-2を特異的に認識。
+application	FACSに有用。
+pubmed_id	
+reference	
+contact	kato_tohoku
+supplier	
+
+.	PMab-1
+category	podoplanin (non-human)
+antigen	mouse podoplanin
+name	PMab-1
+animal	rat
+isotype	IgG2a kappa
+description	マウスポドプラニンに対する、高感度モノクローナル抗体。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=PMab-1+podoplanin](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/?pcd=D321-3](MBL)|[https://www.thermofisher.com/antibody/product/Podoplanin-Antibody-clone-pmab-1-Monoclonal/MA5-16270](Thermo)|[http://www.funakoshi.co.jp/contents/60682](フナコシ)|[https://www.novusbio.com/products/podoplanin-antibody-pmab-1_nbp2-03955](Novus)|[http://www.merckmillipore.com/JP/ja/product/Anti-Podoplanin-Antibody-clone-PMab-1,MM_NF-MABT851](Merck)|[https://www.biolegend.com/en-us/products/purified-anti-mouse-podoplanin-antibody-16538](BioLegend)
+
+.	PMab-2
+category	podoplanin (non-human)
+antigen	rat podoplanin
+name	PMab-2
+animal	mouse
+isotype	IgG1 kappa
+description	ラットポドプラニンに対する、高感度モノクローナル抗体。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=PMab-2](article)
+contact	kato_tohoku
+supplier	[http://www.merckmillipore.com/JP/ja/product/Anti-Podoplanin-Antibody-clone-PMab-2,MM_NF-MABT850](Merck)
+
+.	PMab-32
+category	podoplanin (non-human)
+antigen	rabbit podoplanin
+name	PMab-32
+animal	mouse
+isotype	IgG1 kappa
+description	ウサギポドプラニンに対する、世界初のモノクローナル抗体。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=PMab-32](article)
+contact	kato_tohoku
+supplier	
+
+.	PMab-38
+category	podoplanin (non-human)
+antigen	dog podoplanin
+name	PMab-38
+animal	mouse
+isotype	IgG1 kappa
+description	イヌポドプラニンに対する、高感度モノクローナル抗体。リンパ管やポドサイトには反応しないがん特異的抗体。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=PMab-38](article)
+contact	kato_tohoku
+supplier	
+
+.	PMab-48
+category	podoplanin (non-human)
+antigen	dog podoplanin
+name	PMab-48
+animal	mouse
+isotype	IgG1 kappa
+description	イヌポドプラニンに対する、高感度モノクローナル抗体。リンパ管を検出するのに有用な抗体。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=PMab-48](article)
+contact	kato_tohoku
+supplier	
+
+.	PMab-44
+category	podoplanin (non-human)
+antigen	bovine podoplanin
+name	PMab-44
+animal	mouse
+isotype	IgG1 kappa
+description	ウシポドプラニンに対する、高感度モノクローナル抗体。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=PMab-44](article)
+contact	kato_tohoku
+supplier	
+
+.	PMab-52
+category	podoplanin (non-human)
+antigen	cat podoplanin
+name	PMab-52
+animal	mouse
+isotype	IgM kappa
+description	ネコポドプラニンに対する、高感度モノクローナル抗体。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=PMab-52](article)
+contact	kato_tohoku
+supplier	
+
+.	PMab-52
+category	podoplanin (non-human)
+antigen	tigar podoplanin
+name	PMab-52
+animal	mouse
+isotype	IgM kappa
+description	トラポドプラニンに対する、高感度モノクローナル抗体。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://med-tohoku-antibody.blogspot.com/2018/10/detection-of-tiger-podoplanin-using.html](article)
+contact	kato_tohoku
+supplier	
+
+.	PMab-202
+category	podoplanin (non-human)
+antigen	horse podoplanin
+name	PMab-202
+animal	mouse
+isotype	IgG1 kappa
+description	ウマポドプラニンに対する、高感度モノクローナル抗体。
+application	WB, FACSに有用。
+pubmed_id	
+reference	[https://med-tohoku-antibody.blogspot.com/2018/10/establishment-of-monoclonal-antibody.html](article)
+contact	kato_tohoku
+supplier	
+
+.	PMab-44
+category	podoplanin (non-human)
+antigen	goat podoplanin
+name	PMab-44
+animal	mouse
+isotype	IgG1 kappa
+description	ヤギポドプラニンに対する、高感度モノクローナル抗体。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://med-tohoku-antibody.blogspot.com/2018/10/anti-bovine-podoplanin-monoclonal.html](article)
+contact	kato_tohoku
+supplier	
+
+.	NZ-1.2, NZ-1.3, NC-08
+category	human podoplanin
+antigen	human podoplanin
+name	NZ-1.2, NZ-1.3, NC-08
+animal	
+isotype	
+description	ヒトキメラ型抗体（NZ-12）など、多数の改変抗体を作製済み。すべて、供与可能です。||NZ-1.2, NZ-1.3, NC-08などのクローンは、多くの論文で使われています。
+application	タンパク質精製、IP、IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	
+contact	kato_tohoku
+supplier	[https://www.fishersci.fi/shop/products/podoplanin-rat-anti-human-apc-clone-nz-1-3-ebioscience/p-7090255](Thermo)|[https://www.biolegend.com/ja-jp/products/purified-anti-human-podoplanin-antibody-5797](BioLegend)|[http://www.sigmaaldrich.com/catalog/product/sigma/p0085?lang=ja&region=JP](Sigma)|[http://www.merckmillipore.com/JP/ja/product/Anti-Podoplanin-Antibody%2C-clone-NZ1.2,MM_NF-MABC117](Merck)|[http://ruo.mbl.co.jp/bio/dtl/A/?pcd=D320-3](MBL)|[https://www.novusbio.com/products/podoplanin-antibody-nz-12_nbp2-03952](Novus)|[http://www.funakoshi.co.jp/contents/61195](フナコシ)
+
+.	LpMab-2
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-2
+animal	mouse
+isotype	IgG1 kappa
+description	CasMab
+application	IHC, WB, FACSなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/25080943](article)
+contact	kato_tohoku
+supplier	
+
+.	LpMab-3
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-3
+animal	mouse
+isotype	IgG1 kappa
+description	ヒトポドプラニンに対する、高感度モノクローナル抗体。Thr76を認識。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[ https://www.ncbi.nlm.nih.gov/pubmed/?term=25723283+or+25080943](article)
+contact	kato_tohoku
+supplier	[https://soyaku.co.jp/reagent-sales/lpmab/](医化学創薬)
+
+.	LpMab-7
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-7
+animal	mouse
+isotype	IgG1 kappa
+description	ヒトポドプラニンに対する、高感度モノクローナル抗体。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+pubmed_srch	LpMab-7+podoplanin
+reference	
+contact	kato_tohoku
+supplier	[https://soyaku.co.jp/reagent-sales/lpmab/](医化学創薬)
+
+.	LpMab-9
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-9
+animal	mouse
+isotype	IgG1 kappa
+description	ヒトポドプラニンに対する、高感度モノクローナル抗体。Thr25を認識。
+application	WB, FACSなどに有用。
+pubmed_id	25080943
+reference	
+contact	kato_tohoku
+supplier	[https://soyaku.co.jp/reagent-sales/lpmab/](医化学創薬)
+
+.	LpMab-10
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-10
+animal	mouse
+isotype	IgG3 kappa
+description	PLAG1のThr34を認識。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+pubmed_srch	LpMab-10
+reference	
+contact	kato_tohoku
+supplier	
+
+.	LpMab-12
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-12
+animal	mouse
+isotype	IgG1 kappa
+description	PLAG3のThr52に付加された糖鎖を認識。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=LpMab-12+PLos](article)
+contact	kato_tohoku
+supplier	[https://www.cellsignal.com/products/primary-antibodies/podoplanin-lpmab-12-mouse-mab/26981](CST)|[http://www.merckmillipore.com/JP/ja/product/Anti-Podoplanin-Antibody-clone-LpMab-12,MM_NF-MABT841](Merck)|[https://www.hycultbiotech.com/hm2376](Hycult)|[https://soyaku.co.jp/reagent-sales/lpmab/](医化学創薬)
+
+.	LpMab-13
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-13
+animal	mouse
+isotype	IgG1 kappa
+description	PLAG2-3を認識。NZ-1抗体のエピトープと類似。
+application	IHC, WB, FACSなど、すべての実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=LpMab-13+155-62](article)
+contact	kato_tohoku
+supplier	[http://www.merckmillipore.com/JP/ja/product/Anti-Podoplanin-Antibody-clone-LpMab-13,MM_NF-MABT855](Merck)|[https://www.hycultbiotech.com/hm2374](Hycult)
+
+.	LpMab-17
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-17
+animal	mouse
+isotype	IgG1 kappa
+description	PLAG4を認識。
+application	IHC, WB, FACSなど、すべての実験に有用。内在性のポドプラニンも高感度に認識します。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=LpMab-17+Suzuki](文献)|[http://www.med-tohoku-antibody.com/link/121.htm](プレスリリース（)|[https://www.abmgood.com/](ABM ）)
+contact	kato_tohoku
+supplier	[https://www.bdbiosciences.com/us/reagents/research/antibodies-buffers/immunology-reagents/anti-human-antibodies/cell-surface-antigens/bv421-mouse-anti-human-podoplanin-lpmab-17/p/566456](BD)|[http://www.merckmillipore.com/JP/ja/product/Anti-Podoplanin-Antibody-clone-LpMab-17,MM_NF-MABT867](Merck)
+
+.	LpMab-19
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-19
+animal	mouse
+isotype	IgG2b kappa
+description	ヒトポドプラニンに対する、高感度モノクローナル抗体。Thr76を認識。
+application	IHC, WB, FACSなど、すべての実験に有用。ADCC/CDC活性あり。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=LpMab-19](article)
+contact	kato_tohoku
+supplier	[http://www.merckmillipore.com/JP/ja/product/Anti-Podoplanin-Antibody-clone-LpMab-19,MM_NF-MABT853](Merck)
+
+.	LpMab-21
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-21
+animal	mouse
+isotype	IgG2a kappa
+description	ヒトポドプラニンに対する、高感度モノクローナル抗体。Thr76を認識。
+application	IHC, WB, FACSなど、すべての実験に有用。ADCC/CDC活性あり。
+pubmed_id	
+reference	[http://www.med-tohoku-antibody.com/file/reference/CAM2016_LpMab21.pdf](article)|[http://www.med-tohoku-antibody.com/link/121.htm](プレスリリース（)|[https://www.abmgood.com/](ABM ）)
+contact	kato_tohoku
+supplier	[http://www.merckmillipore.com/JP/ja/product/Anti-Podoplanin-Antibody-clone-LpMab-21,MM_NF-MABT852](Merck)|[https://www.biolegend.com/en-us/products/purified-anti-human-podoplanin-antibody-16309](BioLegend)|[https://soyaku.co.jp/reagent-sales/lpmab/](医化学創薬)
+
+.	LpMab-23
+category	human podoplanin
+antigen	human podoplanin
+name	LpMab-23
+animal	mouse
+isotype	IgG1 kappa
+description	CasMab
+application	IHC, WB, FACSなどの実験に有用。
+pubmed_id	
+reference	[http://online.liebertpub.com/doi/full/10.1089/mab.2017.0001](article)
+contact	kato_tohoku
+supplier	
+
+.	HMab-1
+category	IDH
+antigen	ヒトIDH1-R132H
+name	HMab-1
+animal	mouse
+isotype	IgG1 kappa
+description	IDH1-R132Hを特異的に認識。
+application	IHC, WBなどの実験に有用。（<a href="http://plaza.umin.ac.jp/sawamura/braintumors/2016who/" target="_blank">WHO2016</a>で、R132Hに対するIHCが必須に。）
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/22396072](article)
+contact	kato_tohoku
+supplier	[https://www.merckmillipore.com/JP/ja/product/Anti-Isocitrate-Dehydrogenase-1-%28IDH1%29-R132H-Antibody%2C-clone-HMab-1,MM_NF-MABC171?ReferrerURL=https%3A%2F%2Fwww.google.co.jp%2F&bd=1](Merck)|[http://ruo.mbl.co.jp/bio/dtl/A/?pcd=D299-3](MBL)|[http://www.sigmaaldrich.com/catalog/product/sigma/sab4200548?lang=ja&region=JP](Sigma)|[http://www.ibl-japan.co.jp/search/product/detail/id=3582](IBL)|[https://www.bdbiosciences.com/us/home](BD)
+
+.	HMab-2
+category	IDH
+antigen	ヒトIDH1-R132H
+name	HMab-2
+animal	mouse
+isotype	IgG1 kappa
+description	IDH1-R132Hを特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=HMab-2+IDH](article)
+contact	kato_tohoku
+supplier	
+
+.	SMab-1
+category	IDH
+antigen	ヒトIDH1-R132S
+name	SMab-1
+animal	mouse
+isotype	IgG1 kappa
+description	IDH1-R132Sを特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=SMab-1](article)
+contact	kato_tohoku
+supplier	[https://www.merckmillipore.com/JP/ja/product/Anti-Isocitrate-Dehydrogenase-1-%28IDH1%29-R132S-Antibody%2C-clone-SMab-1,MM_NF-MABC187](Merck)|[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D300-3](MBL)|[http://www.ibl-japan.co.jp/search/product/detail/id=3583](IBL)|[http://www.sigmaaldrich.com/catalog/product/sigma/sab4200547?lang=ja&region=JP](Sigma)
+
+.	GMab-r1
+category	IDH
+antigen	ヒトIDH1-R132G
+name	GMab-r1
+animal	rat
+isotype	IgG2a kappa
+description	IDH1-R132Gを特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=GMab-r1](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D331-3](MBL)
+
+.	KMab-1
+category	IDH
+antigen	ヒトIDH2-R172K
+name	KMab-1
+animal	rat
+isotype	IgG2b kappa
+description	IDH2-R172Kを特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=KMab-1](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D328-3](MBL)
+
+.	MMab-1
+category	IDH
+antigen	ヒトIDH2-R172M
+name	MMab-1
+animal	rat
+isotype	IgG2b kappa
+description	IDH2-R172Mを特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=MMab-1+IDH2](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D337-3](MBL)
+
+.	WMab-1
+category	IDH
+antigen	ヒトIDH2-R172W
+name	WMab-1
+animal	rat
+isotype	IgG2b kappa
+description	IDH2-R172Wを特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=WMab-1+IDH2](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D338-3](MBL)
+
+.	RMab-3
+category	IDH
+antigen	ヒトIDH1
+name	RMab-3
+animal	mouse
+isotype	IgG1 kappa
+description	IDH1を特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/25324168](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D309-3](MBL)|[https://www.bdbiosciences.com/us/home](BD)
+
+.	RcMab-1
+category	IDH
+antigen	ヒトIDH1
+name	RcMab-1
+animal	rat
+isotype	IgG2a kappa
+description	IDH1を特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/25324168](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D336-3](MBL)|[https://www.cellsignal.com/](CST)
+
+.	RMab-22
+category	IDH
+antigen	ヒトIDH2
+name	RMab-22
+animal	mouse
+isotype	IgG2b kappa
+description	IDH1を特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/25324168](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D311-3](MBL)
+
+.	KrMab-3
+category	IDH
+antigen	ヒトIDH2
+name	KrMab-3
+animal	mouse
+isotype	IgG1 kappa
+description	IDH1を特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/25324168](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D330-3](MBL)|[https://www.cellsignal.com/](CST)
+
+.	MsMab-1
+category	IDH
+antigen	変異型IDH1/2
+name	MsMab-1
+animal	mouse
+isotype	IgG1 kappa
+description	IDH1を特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=MsMab-1](article)
+contact	kato_tohoku
+supplier	
+
+.	MsMab-2
+category	IDH
+antigen	変異型IDH1/2
+name	MsMab-2
+animal	rat
+isotype	IgG2a kappa
+description	IDH1を特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=MsMab-2](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D332-3](MBL)

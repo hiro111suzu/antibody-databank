@@ -1,0 +1,16 @@
+.	MsMab-2::変異型IDH1/2
+.	MsMab-2
+category	IDH
+antigen	変異型IDH1/2
+name	MsMab-2
+animal	rat
+isotype	IgG2a kappa
+description	IDH1を特異的に認識。
+application	IHC, WBなどの実験に有用。
+pubmed_id	
+reference	[https://www.ncbi.nlm.nih.gov/pubmed/?term=MsMab-2](article)
+contact	kato_tohoku
+supplier	[http://ruo.mbl.co.jp/bio/dtl/A/index.html?pcd=D332-3](MBL)
+description_j	maltose-binding proteinを特異的に認識。
+pubmed_srch	LpMab-10
+

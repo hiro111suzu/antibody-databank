@@ -1,0 +1,224 @@
+﻿
+.	j
+category	カテゴリ
+name	抗体名称
+antibody	抗体
+antigen	抗原
+antigen2	抗原
+animal	抗体動物
+isotype	アイソタイプ
+description	詳細
+application	用途
+reference	参照
+contact	連絡先
+supplier	販売・提供
+pname	タンパク質名
+gn	遺伝子名
+organism	生物
+
+IP	免疫沈降
+IHC	免疫組織化学
+WB	ウエスタンブロッティング
+FACS	フローサイトメトリー
+ICC	免疫細胞化学
+protein purification	タンパク質精製
+$wako	富士フィルム和光純薬
+
+Homo sapiens	ヒト
+
+.	e
+category	Category
+name	Antibody name
+antibody	Antibody
+antigen	Antigen
+antigen2	Antigen
+animal	Antibody animal
+isotype	Isotype
+pname	Protein name
+gn	Gene name
+organism	Organism
+
+
+description	Description
+application	Application
+reference	Reference
+contact	Contact
+supplier	Supplier
+
+IP	immunoprecipitation
+IHC	immunohistochemistry
+ICC	immunocytochemistry
+WB	western blotting
+FACS	flow cytometry
+
+$wako	FUJIFILM Wako Pure Chemical Corporation
+富士フイルム和光純薬	FUJIFILM Wako Pure Chemical
+ゼノアックリソース	ZENOAQ RESOURCE
+フナコシ	Funakoshi
+医化学創薬	Medicinal Chemistry Pharmaceutical Co., Ltd.
+
+抗腫瘍効果あり	Has an antitumor effect
+	
+Homo sapiens	human
+
+
+.	e2j
+tag system	タグシステム
+mouse	マウス
+rat	ラット
+podocalyxin	ポドカリキシン
+Podoplanin	ポドプラニン
+podoplanin (non-human)	ポドプラニン (ヒト以外)
+podoplanin (human)	ポドプラニン (ヒト)
+human podoplanin	ヒトポドプラニン
+cat podoplanin	ネコポドプラニン
+tigar podoplanin	トラポドプラニン
+horse podoplanin	ウマポドプラニン
+goat podoplanin	ヤギポドプラニン
+dog podoplanin	イヌポドプラニン
+mouse podoplanin	マウスポドプラニン
+rat podoplanin	ラットポドプラニン
+rabbit podoplanin	ウサギポドプラニン
+bovine podoplanin	ウシポドプラニン
+swine podoplanin	ブタポドプラニン
+sheep podoplanin	ヒツジポドプラニン
+alpaca podoplanin	アルパカポドプラニン
+tasmanian devil podoplanin	タスマニアデビルポドプラニン
+bear podoplanin	クマポドプラニン
+cetacean podoplanin	クジラポドプラニン
+mutatnt IDH1/2	変異型IDH1/2
+human CLEC-2	ヒトCLEC-2	
+human IDH1-R132H	ヒトIDH1-R132H	
+human IDH1-R132H	ヒトIDH1-R132H	
+human IDH1-R132S	ヒトIDH1-R132S	
+human IDH1-R132G	ヒトIDH1-R132G	
+human IDH2-R172K	ヒトIDH2-R172K	
+human IDH2-R172M	ヒトIDH2-R172M	
+human IDH2-R172W	ヒトIDH2-R172W	
+human IDH1	ヒトIDH1	
+human IDH1	ヒトIDH1	
+human IDH2	ヒトIDH2	
+human IDH2	ヒトIDH2	
+	
+Epidermal growth factor receptor	上皮成長因子受容体
+
+mouse xCT	マウスxCT
+
+To be published	近日公開
+article	論文
+article1	論文1
+article 1	論文１
+article 2	論文2
+article 3	論文3
+literature	文献
+
+press release	プレスリリース
+press release (	プレスリリース（
+rat	ラット
+mouse	マウス
+human	ヒト
+
+epitope	エピトープ
+etc.	など
+	
+..	tag
+Type	タイプ
+Tag name	タグ名
+Sequence	配列
+Trademark	商標
+Project	プロジェクト
+Remark	備考
+Tag type	タグタイプ
+
+.	rep_e
+kato_tohoku	Kato laboratory, Tohoku univ.|//www.med-tohoku-antibody.com/
+PAtag	PAtag (peptide-tag system, 12 res. (GVAMPGAEDDVV), 加藤研究室の登録商標(登録第5671624号), AMED・PDISの成果)
+MAPtag	MAPtag (peptide-tag system, 12 res. (GDGMVPPGIEDK), 加藤研究室の登録商標(商願2017- 26697), AMED革新的バイオの成果)
+RAPtag	RAPtag (peptide-tag system, 12 res. (DMVNPGLEDRIE),  AMED革新的バイオの成果)
+PA16	PA16tag (peptide-tag system, 16 res. (GLEGGVAMPGAEDDVV), AMED・糖鎖創薬の成果)
+
+Homo sapiens	human
+
+.	rep_j
+kato_tohoku	東北大学 加藤研究室|//www.med-tohoku-antibody.com/
+PAtag	PAtag (ペプチドタグシステム, 12アミノ酸 (GVAMPGAEDDVV), 加藤研究室の登録商標(登録第5671624号), AMED・PDISの成果)
+MAPtag	MAPtag (ペプチドタグシステム, 12アミノ酸 (GDGMVPPGIEDK), 加藤研究室の登録商標(商願2017- 26697), AMED革新的バイオの成果)
+RAPtag	RAPtag (ペプチドタグシステム, 12アミノ酸 (DMVNPGLEDRIE), AMED革新的バイオの成果)
+PA16	PA16tag (ペプチドタグシステム, 16アミノ酸 (GLEGGVAMPGAEDDVV), AMED・糖鎖創薬の成果)
+
+Homo sapiens	ヒト
+
+.	protein
+PD-L1	Q9NZQ7
+CD44	P16070
+CD133	O43490
+EGFR	P00533
+HER2	P04626
+DGKalpha	P23743
+DGKgamma	P49619
+ATRX	P46100
+TERT	O14746
+podocalyxin	O00592
+xCT	Q9UPY5
+mouse xCT	Q9WTR6
+CLEC-2	Q9P126
+podoplanin	Q86YL7
+human podoplanin	Q86YL7
+cat podoplanin	x
+tigar podoplanin	x
+horse podoplanin	x
+goat podoplanin	x
+swine podoplanin	x
+alpaca podoplanin	x
+tasmanian devil podoplanin	x
+bear podoplanin	x
+cetacean podoplanin	x
+sheep podoplanin	x
+dog podoplanin	Q95152
+mouse podoplanin	Q62011
+rat podoplanin	Q64294
+rabbit podoplanin	x
+bovine podoplanin	A0A3Q1M624
+
+IDH1	O75874
+IDH2	P48735
+CD44s	P16070
+DGKzeta	Q13574
+hTERT	O94807
+mutatnt IDH1/2	O75874
+
+.	citation
+
+PMab-1	27801621|27267652|27380308|27564251|29998193|
+PMab-2	26683179|27267652|27380308|27801621|28339303|30088964
+
+.	categ tag
+e	tag system	
+j	タグシステム
+
+.	categ 
+
+
+
+
+mouse	マウス
+rat	ラット
+podocalyxin	ポドカリキシン
+podoplanin (non-human)	ポドプラニン (ヒト以外)
+podoplanin (human)	ポドプラニン (ヒト)
+human podoplanin	ヒトポドプラニン
+cat podoplanin	ネコポドプラニン
+tigar podoplanin	トラポドプラニン
+horse podoplanin	ウマポドプラニン
+goat podoplanin	ヤギポドプラニン
+dog podoplanin	イヌポドプラニン
+mouse podoplanin	マウスポドプラニン
+rat podoplanin	ラットポドプラニン
+rabbit podoplanin	ウサギポドプラニン
+bovine podoplanin	ウシポドプラニン
+
+.	rep_application
+など、すべての実験に有用。	, etc.
+に有用。	 
+タンパク質精製	protein purification
+、	,

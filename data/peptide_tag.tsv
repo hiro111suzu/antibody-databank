@@ -1,0 +1,60 @@
+.	PAtag
+seq	GVAMPGAEDDVV
+by_e	AMED-PDIS
+by_j	AMED-PDIS
+tm_e	Kato-lab (5671624)
+tm_j	加藤研究室の登録商標(登録第5671624号)
+
+.	MAPtag
+seq	GDGMVPPGIEDK
+by_e	AMED-ibiomed
+by_j	AMED革新的バイオ
+tm_e	Kato-lab (2017- 26697)
+tm_j	加藤研究室の登録商標(商願2017- 26697)
+
+.	RAPtag
+seq	DMVNPGLEDRIE
+by_e	AMED-ibiomed
+by_j	AMED革新的バイオ
+
+.	PA16tag
+seq	GLEGGVAMPGAEDDVV
+by_j	AMED・糖鎖創薬
+by_e	AMED
+imp	PAtag
+imp	PAtag
+
+.	MAP16tag
+seq	PGTGDGMVPPGIEDKI
+by_j	AMED・糖鎖創薬
+by_e	AMED
+imp	MAPtag
+
+
+.	RAP14tag
+seq	DMVNPGLEDRIEDL
+rem_e	double tag / recognized by PMab-2, LpMab-7
+rem_j	ダブルタグ、PMab-2とLpMab-7の2つの抗体が認識
+by_j	AMED・糖鎖創薬の成果
+by_e	AMED
+imp	RAPtag
+
+.	RAP16tag
+seq	GPGDDMVNPGLEDRIE
+by_j	AMED-BINDS
+by_e	AMED-BINDS
+imp	RAPtag
+
+.	BAPtag
+seq	EKTTLGVEDYTTTPAA
+by_j	AMED-BINDS
+by_e	AMED-BINDS
+
+.	LPtag
+seq	NSVTGIRIEDLPTSES
+by_j	AMED-BINDS
+by_e	AMED-BINDS
+
+.	MBPtag
+rem_e	Maltose-binding protein (MBP) tag
+rem_j	maltose-binding protein (MBP) タグ

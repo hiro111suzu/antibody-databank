@@ -1,0 +1,112 @@
+
+タンパク質精製については、<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=26872787+24480187" target="_blank">Fujii et al., PEP2014; Fujii et al., JCS2016</a>の２報で詳述
+For details of protein purification, see <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=26872787+24480187" target="_blank">Fujii et al., PEP2014; Fujii et al., JCS2016</a>
+
+さらに、<a href="http://www.pssj.jp/archives/protocol/purification/affinity_02/affinity_02.html" target="_blank">蛋白質科学会アーカイブ</a>でプロトコールを解説
+x
+
+タンパク質精製については、<a href="https://www.ncbi.nlm.nih.gov/pubmed/27801621" target="_blank">Fujii et al., MAB2016</a>で詳述
+For protein purification, see <a href="https://www.ncbi.nlm.nih.gov/pubmed/27801621" target="_blank">Fujii et al., MAB2016</a>
+
+タンパク質精製については、<a href="https://www.ncbi.nlm.nih.gov/pubmed/28339303" target="_blank">Fujii et al., MAB2017</a>で詳述
+For protein purification, see <a href="https://www.ncbi.nlm.nih.gov/pubmed/28339303" target="_blank">Fujii et al., MAB2017</a>
+
+
+WBについては、複数の論文で使用例あり
+Has been used for WB in several articles
+
+anti-RAP tag抗体はマウス抗体のため、二次抗体としてanti-mouse IgGを使いたい場合には有用性が高い
+Since anti-RAP tag antibody is a mouse antibody, it is highly useful for anti-mouse IgG as a secondary antibody
+
+PMab-44が、ヒツジポドプラニンに交差反応性を示す。
+PMab-44 is cross-reactive to ovine podoplanin.
+
+WBについては、PAtagよりも感度が高い
+Higher sensitivity than PAtag for WB
+
+MAPtag抗体はヒト細胞株に反応しないため、膜タンパク質の解析に威力を発揮する
+As MAPtag does not recognize human cell lines, it is useful for analysis of membrane proteins
+
+maltose-binding proteinを特異的に認識。
+Recognize maltose-binding protein specifically.
+
+マウス、ラットなどのげっ歯類の実験に特
+Particularly useful for experiments with rodents such as mice and rats.
+
+ヒト、マウス、ラット、ラビット、イヌ、ネコ、などのあらゆるタンパク質に交差反応性を示さない特異性の高さが特徴
+High specificity without cross-reactivity to any protein such as human, mouse, rat, rabbit, dog, cat, etc.
+
+(注) 共同研究先の企業からの分譲。
+Sold from a company of cooperative research.
+
+DgMab-8の樹立、エピトープ解析
+Establishment of DgMab-8, epitope analysis
+
+ウサギポドプラニンに対する、世界初のモノクローナル抗体。
+The first monoclonal antibody against rabbit podoplanin.
+
+リンパ管やポドサイトには反応しないがん特異的抗体。
+Cancer-specific antibody without recognition of lymphatic vessels and podocytes.
+
+リンパ管を検出するのに有用な抗体。
+For detecting lymphatics
+
+ネコにも交差反応性を示す。
+Cross-reactive with feline podoplanin.
+
+ネコポドプラニンに対する高感度モノクローナル抗体PMab-52が、トラポドプラニンに交差反応性を示す。
+Cross-reactive with tigar podoplanin.
+
+PMab-44が、アルパカポドプラニンに交差反応性を示す。
+Cross-reactive with alpaca podoplanin.
+
+ヒトキメラ型抗体（NZ-12）など、多数の改変抗体を作製済み。すべて、供与可能です。
+A number of modified antibodies have been created, including human chimeric antibodies (NZ-12). All can be provided.
+
+Thr76を認識。
+Recognizes Thr76.
+
+Thr25を認識。
+Recognizes Thr25.
+
+PLAG3のThr52に付加された糖鎖を認識。
+Recognizes polysaccharide on Thr52 of PLAG3.
+
+PLAG1のThr34を認識。
+Recognizes Thr34 of PLAG1
+
+内在性のポドプラニンも高感度に認識します
+Endogenous podoplanin is also sensitively recognized
+
+ADCC/CDC活性あり
+with ADCC/CDC activity
+
+PLAG2-3を認識。NZ-1抗体のエピトープと類似。
+Recognizes PLAG2-3. Similar to the epitope of NZ-1 antibody.
+
+PLAG4を認識。
+Recognizes PLAG4
+
+IDH1-R132Hを特異的に認識。
+Recognizes IDH1-R132H specifically
+
+IDH1-R132Gを特異的に認識。
+Recognizes IDH1-R132G specifically
+
+IDH2-R172Kを特異的に認識。
+Recognizes IDH2-R172K specifically
+
+IDH2-R172Mを特異的に認識。
+Recognizes IDH2-R172M specifically
+
+IDH2-R172Wを特異的に認識。
+Recognizes IDH2-R172W specifically
+
+IDH1-R132Sを特異的に認識。
+Recognizes IDH1-R132S specifically
+
+CD44s (CD44 standard)を特異的に認識。
+Recognizes CD44 standard (CD44s) specifically.
+
+(抗体遺伝子クローニング済み。)
+Antibody gene cloned.

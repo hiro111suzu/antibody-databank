@@ -1,0 +1,78 @@
+﻿.	contact
+..	tohoku_kato
+e	Kato lab., Tohoku Univ.
+j	東北大学 加藤研究室
+url	//www.med-tohoku-antibody.com/
+
+.	category
+..	tag
+e	tag system
+j	タグシステム
+
+..	PD-L1
+e	PD-L1
+
+..	CD44
+e	CD44 antigen
+j	CD44抗原
+
+.	antigen
+..	PD-L1
+e	Programmed cell death 1 ligand 1
+unp	Q9NZQ7
+
+..	CD44
+unp	P16070
+
+..	CD133
+unp	O43490
+
+..	EGFR
+unp	P00533
+
+..	HER2
+unp	P04626
+
+..	DGKalpha
+unp	P23743
+
+..	DGKgamma
+unp	P49619
+
+..	ATRX
+unp	P46100
+
+TERT	O14746
+podocalyxin	O00592
+xCT	Q9WTR6
+CLEC-2	Q9P126
+podoplanin	Q86YL7
+cat podoplanin	
+tigar podoplanin	
+horse podoplanin	
+goat podoplanin	
+dog podoplanin	Q95152
+mouse podoplanin	Q62011
+rat podoplanin	Q64294
+rabbit podoplanin	
+bovine podoplanin	
+
+IDH1	O75874
+IDH2	P48735
+
+.	application
+..	IP
+e	immunoprecipitation
+j	免疫沈降
+
+..	IHC
+e	immunohistochemistry
+j	免疫組織化学
+
+..	WB
+e	Western blotting
+j	ウエスタンブロッティング
+
+..	FACS
+e	flow cytometry
+j	フローサイトメトリー
