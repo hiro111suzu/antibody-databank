@@ -11,6 +11,7 @@ $data = _json_load( 'data/main.json' );
 define( 'RANGE', 10 );
 define( 'COUNT_ALL', count( $data ) );
 define( 'FA_EXTLNK', _fa( 'external-link' ) );
+define( 'G_PAGE', _getpost_safe( 'page' ) ?: 0 );
 
 _add_url([
 	'doi'	=> 'https://dx.doi.org/[id]' ,
@@ -174,7 +175,7 @@ function _form() {
 			'on'   => GET_ANIM ?: 'all'
 		], $items_anim )
 	)
-	. _e( 'input| type:hidden| #pagen| name:pagen| value:' . G_PAGE )
+	. _e( 'input| type:hidden| #pagen| name:pagen| value:'. G_PAGE )
 	. _e( 'input| type:submit| st: width:30%| .submitbtn' )
 	;
 }

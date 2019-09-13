@@ -956,6 +956,7 @@ class PHR {
 
 //.. ファイル名
 $_filenames += [
+/*
 	//- emdb
 	'emdb_snap'		=> DN_EMDB_MED	. '/<id>/snap<s1>.jpg' ,
 
@@ -984,6 +985,7 @@ $_filenames += [
 
 	//- pubmed
 	'pubmed'		=> DN_DATA		. "/pubmed/<id>.json" ,
+*/
 ];
 
 
@@ -1447,9 +1449,11 @@ function _simple_out( $a ) {
 	unset( $a );
 	//- jsvar 追加
 	_jsvar([
-		'idservadr' => IMG_MODE == 'em'
-			? 'ajax.php?mode=id2img&img_mode=em&id='
-			: 'ajax.php?mode=id2img&id='
+		'idservadr' => 'ajax.php?mode=id2img&id='
+		
+//IMG_MODE == 'em'
+//			? 'ajax.php?mode=id2img&img_mode=em&id='
+//			: 'ajax.php?mode=id2img&id='
 		,
 		'popxbtn' => [
 			1 => _btn( '!_pop.hide() | .pophide', 'X' ) ,
@@ -1462,6 +1466,7 @@ function _simple_out( $a ) {
 	$_meta .= _e( "meta|name:theme-color|content:$col_dark" );
 
 	//.. autocomp
+/*
 	$j = _json_load2( DN_DATA . '/autocomp.json.gz' );
 	$e = COLOR_MODE == 'emn';
 	$autocomp = _t( 'datalist | #acomp_kw', $j->kw );
@@ -1472,7 +1477,7 @@ function _simple_out( $a ) {
 			$e ? $j->an_em : $j->an 
 		);
 	}
-
+*/
 	//.. タイトル
 	$title_color = $title;
 	$title = strtr( $title, [
@@ -1516,6 +1521,7 @@ function _simple_out( $a ) {
 	);
 
 	//- トップページでない (EMN /YMでない)
+/*
 	if ( ! defined( 'TOP_PAGE' ) ) {
 		$s = _t( 'ul',
 			_t( $pk,
@@ -1532,7 +1538,6 @@ function _simple_out( $a ) {
 		);
 	}
 
-/*
 	$item_pankuzu = _t( 'nav' , 
 		//- PDBj
 		_t( $pk, _ab(
@@ -1849,7 +1854,7 @@ function _simple_out( $a ) {
 		. _div( '#popbox2|.popbox', '' )
 		. _div( '#popbox3|.popbox', '' )
 		. $_hidden //- jsで使う隠し要素など
-		. $autocomp
+//		. $autocomp
 		. _js( 'simple_common', 'simple', $js ) // 'simple_mov',
 	;
 }
