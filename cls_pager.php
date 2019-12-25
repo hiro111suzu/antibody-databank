@@ -33,7 +33,7 @@ page 現在のページ、totalデータ数、rangeページごとのデータ�
 objname javascriptへ渡すときの名前
 str: eg. for keyword:...
 
-test_test
+test_test2
 
 */
 //. パラメータ
