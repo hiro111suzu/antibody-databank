@@ -32,6 +32,9 @@ pager ページャ
 page 現在のページ、totalデータ数、rangeページごとのデータ数、
 objname javascriptへ渡すときの名前
 str: eg. for keyword:...
+
+test_test
+
 */
 //. パラメータ
 protected $page, $total, $range, $str, $btns,
