@@ -21,18 +21,21 @@ TERM_PREV
 TERM_NEXT
 	Next
 	次へ
-
+TERM_PAGE
+	page
+	ページ
 EOD
 );
 
-class cls_pager {
 /*
 pager ページャ
-検索結果とかの説明とページ番号ボタン
+検索結果の説明とページ番号ボタン
 page 現在のページ、totalデータ数、rangeページごとのデータ数、
 objname javascriptへ渡すときの名前
 str: eg. for keyword:...
 */
+class cls_pager {
+
 //. パラメータ
 protected $page, $total, $range, $str, $btns,
 	$objname = 'l',
@@ -114,7 +117,7 @@ function btn() {
 	);
 
 	return $this->btns = _p( '.topline',
-		_ej( 'Pages', 'ページ' ) . ': ' . implode( '', $out ) 
+		TERM_PAGE. ': ' . implode( $out ) 
 	);
 }
 
