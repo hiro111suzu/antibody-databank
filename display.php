@@ -123,6 +123,7 @@ EOD;
 //. form
 _simple_hdiv( _fa('search') . _ej( 'Search', '検索' ) ,
 	_t( 'form| #form1', _form() )
+	. '<!-- test -->'
 );
 
 //.. function
