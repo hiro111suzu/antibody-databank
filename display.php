@@ -66,6 +66,9 @@ $_filenames += [
 //.. peptag
 define( 'PEP_TAG', _tsv_load2( 'data/peptide_tag.tsv' ) );
 
+//.. pdb
+define( 'AB_PDB_ID', _tsv_load2( 'data/ab_pdb_id.tsv' ) );
+
 //.. j2e
 
 
@@ -324,6 +327,7 @@ function _ent_table( $item, $flg_hide ) {
 			'pname'		=> _long( $j['name'], 2 ),
 			'gn'		=> _long( $j['gn'], 4 ),
 			'organism'	=> TERM_REP[ $j['org'] ] ?: $j['org'] ,
+			'UniProt'	=> _ab( 'https://uniprot.org/uniprot/'. $unp_id, FA_EXTLNK. 'UniProt:'. $unp_id ) ,
 //			'test'		=> _test(
 //				_ab( _fn( 'unp_json', $unp_id ), 'unp_json' )
 //			)
@@ -358,6 +362,17 @@ function _ent_table( $item, $flg_hide ) {
 		'isotype'	=> _imp( $item[ 'isotype' ] ) ,
 	]);
 
+	//... PDB
+	$o = [];
+	foreach ( (array)explode( ',', $item[ 'name' ] ) as $n ) {
+		foreach ( (array)AB_PDB_ID[ trim( $n ) ] as $i => $t ) {
+			$o[] = _ab( 'https://pdbj.org/mine/summary/'. $i, FA_EXTLNK. $i ). ": $t";
+		}
+	}
+	if ( $o )
+		$item[ 'structure' ] = _li_many( $o );
+
+	//... いったんまとめ
 	$item = array_merge( $add, $item );
 	unset( $item[ 'name' ], $item['animal'], $item['isotype'] );
 

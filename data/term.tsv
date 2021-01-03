@@ -15,6 +15,7 @@ supplier	販売・提供
 pname	タンパク質名
 gn	遺伝子名
 organism	生物
+structure	構造
 
 IP	免疫沈降
 IHC	免疫組織化学
@@ -37,7 +38,7 @@ isotype	Isotype
 pname	Protein name
 gn	Gene name
 organism	Organism
-
+structure	Structure
 
 description	Description
 application	Application

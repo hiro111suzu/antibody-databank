@@ -2,7 +2,7 @@
 date_default_timezone_set("Asia/Tokyo"); 
 //ini_set('display_errors', 'stderr');
 //error_reporting(E_ALL);
-
+//	ini_set( 'error_reporting', E_ALL & ~E_NOTICE );
 //define( 'SPEED_TEST', true );
 
 if ( ! defined( 'AJAX' ) )
