@@ -1,6 +1,7 @@
 ﻿<?php 
-require_once( __DIR__ . '/common-web.php' );
+require_once( __DIR__. '/common-web.php' );
 //exec( 'parse.php' );
+$a = '';
 
 //. init
 
@@ -124,7 +125,7 @@ $css = <<<EOD
 EOD;
 
 //. form
-_simple_hdiv( _fa('search') . _ej( 'Search', '検索' ) ,
+_simple_hdiv( _fa('search'). _ej( 'Search', '検索' ) ,
 	_t( 'form| #form1', _form() )
 );
 
@@ -133,7 +134,7 @@ function _form() {
 	global $list_anim, $list_categ;
 	$get = array_filter( $_GET );
 	unset( $get['lang'] );
-	$term_all = _ej( 'all', 'すべて' ) . _span( '.small', ' ('. COUNT_ALL. ')' );;
+	$term_all = _ej( 'all', 'すべて' ). _span( '.small', ' ('. COUNT_ALL. ')' );;
 
 	//... categ
 	$items_categ = [ 'all' => $term_all ];
@@ -163,7 +164,7 @@ function _form() {
 	//... return
 	return _t( 'table| .ent_table', ''
 		.TR.TH. _ej( 'Keywords', 'キーワード' )
-		.TD . _inpbox( 'kw', html_entity_decode( GET_KW ) )
+		.TD. _inpbox( 'kw', html_entity_decode( GET_KW ) )
 
 		.TR.TH. _l( 'category' ) .TD. _radiobtns([
 			'name' => 'category' ,
@@ -186,7 +187,7 @@ function _form() {
 //. data
 
 //.. output
-_simple_hdiv( _fa('database') . _ej( 'Data', 'データ' ) ,
+_simple_hdiv( _fa('database'). _ej( 'Data', 'データ' ) ,
 	_div( '#searchres', _data_output( $data ) ) ,
 	[ 'hide' => NO_DATA, 'id' => 'data' ] 
 );
@@ -294,7 +295,7 @@ function _data_output( $data ) {
 		'div'		=> '#searchres' ,
 		'func_name' => '_form.pagenum' ,
 	]);
-	return $o_pager->msg() . ( 1 < count( $use ) ? BTN_HDIV2_ALL : '' ) . $ret . $o_pager->btn();
+	return $o_pager->msg(). ( 1 < count( $use ) ? BTN_HDIV2_ALL : '' ). $ret. $o_pager->btn();
 }
 
 //.. ent_table
@@ -304,8 +305,8 @@ function _ent_table( $item, $flg_hide ) {
 
 	//... summary
 	$summary = _imp([
-		_ej( 'anti-', '抗' ) . _l( $item['antigen'] ) ,
-		'"'. _imp( $item['name'] ) . '"' ,
+		_ej( 'anti-', '抗' ). _l( $item['antigen'] ) ,
+		'"'. _imp( $item['name'] ). '"' ,
 		_l( $item['animal'] ) .' '. _imp( $item['type'] )
 	]);
 
@@ -411,7 +412,7 @@ function _ent_table( $item, $flg_hide ) {
 					FA_EXTLNK. _imp([
 						'<i>'. $j['journal']. '</i>' ,
 						$j['year'] ,
-						$j['vol'] . ( $j['isu'] ? '('. $j['isu']. ')': '' ) ,
+						$j['vol']. ( $j['isu'] ? '('. $j['isu']. ')': '' ) ,
 						$j['page']
 					])
 				) ,
@@ -436,7 +437,7 @@ function _ent_table( $item, $flg_hide ) {
 			$va = [];
 			foreach( $val as $a ) {
 				$va[] .= is_array( $a )
-					? ( $a[1] ? _ab( $a[1], FA_EXTLNK . _l( $a[0] ) ) : _l( $a[0] ) )
+					? ( $a[1] ? _ab( $a[1], FA_EXTLNK. _l( $a[0] ) ) : _l( $a[0] ) )
 					: _l( $a )
 				;
 			}
