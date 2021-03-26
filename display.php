@@ -1,7 +1,7 @@
 ﻿<?php 
 require_once( __DIR__. '/common-web.php' );
 //exec( 'parse.php' );
-$a = '';
+
 
 //. init
 
