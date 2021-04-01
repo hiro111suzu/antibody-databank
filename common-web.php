@@ -9,14 +9,14 @@ if ( ! defined( 'AJAX' ) )
 	define( 'AJAX', false );
 
 //- mngシステムと共通のライブラリ
-require( __DIR__ . '/common-all.php' );
+require( __DIR__. '/common-all.php' );
 
 
 $_sqlite_log = [];
 
 //. クラス
 spl_autoload_register( function( $class_name ) {
-	require_once $class_name . '.php';
+	require_once $class_name. '.php';
 });
 
 //. 初期設定
@@ -184,7 +184,7 @@ function _add_lang_tsv( $key ) {
 //- ページタイトル用
 function _short( $s, $l = 70 ) {
 	return ( mb_strlen( $s ) > $l )
-		? mb_substr( $s, 0, $l - 5 ) . "..."
+		? mb_substr( $s, 0, $l - 5 ). "..."
 		: $s
 	;
 }
@@ -200,7 +200,7 @@ function _x( $s ) {
 	if ( is_object( $s ) || is_array( $s ) )
 		return _test( _t( 'pre | .red bld', print_r( $s, true ) ) );
 	if ( strlen( $s ) > 5000 )
-		$s = substr( $s, 0, 5000 ) . ' ...';
+		$s = substr( $s, 0, 5000 ). ' ...';
 	return _reg_rep( trim( $s ), [
 		'/[\n\r\t ]+/' => ' ',
 		'/^(na|n\/a|null|none)$/i' => '' ,
@@ -222,7 +222,7 @@ function _format_bytes( $b ) {
 	if ( $b <       1048576 ) $r = [       1024, ' KB' ];
 	if ( $b <          1024 ) $r = [          1, ' B'  ];
 	if ( $b == 0 ) return;
-	return round( $b / $r[0], 1 ) . $r[1];
+	return round( $b / $r[0], 1 ). $r[1];
 }
 
 //.. _kv: key : value
@@ -310,7 +310,7 @@ function _e( $tag ) {
 		. implode( ' ',	_reg_rep(
 			preg_split( '/ *\| */', trim( $tag ), 0, PREG_SPLIT_NO_EMPTY ) ,
 			TAG_REP
-		)) . '>'
+		)). '>'
 	;
 }
 
@@ -333,7 +333,7 @@ function _ab( $url, $str, $opt = '' ) {
 function _ai( $url, $icon, $str = '', $opt = '' ) {
 	if ( is_array( $url ) )
 		$url = _emnlink( $url );
-	return _t( "a| href:$url | $opt", _ic( $icon ) . $str );
+	return _t( "a| href:$url | $opt", _ic( $icon ). $str );
 }
 
 //- 今のページなら太字、違えばリンク
@@ -402,13 +402,13 @@ function _selopt( $opt, $ar, $sel = '' ) {
 		$s = $k == $sel ? 'selected:selected' : '';
 		$ret .= _t( "option | value:$k | $s", $v );
 	}
-	return _t( 'select |' . $opt, $ret );
+	return _t( 'select |'. $opt, $ret );
 }
 
 //.. _xbtn
 function _xbtn( $js = '', $o = '' ) {
 	return _t( "button| !$js| .xbtn| title:"
-			. _ej( 'Button : Close', 'ボタン : 閉じる' ) . "|$o" ,
+			. _ej( 'Button : Close', 'ボタン : 閉じる' ). "|$o" ,
 		 'X' );
 }
 
@@ -482,7 +482,7 @@ function _quicksqlite( $type, $val ) {
 		$o_dbs[ $dbname ] = new cls_sqlite( $dbname );
 	$sql=[
 		'select' => $select ,
-		'where'  => "$key=" . _quote( $val ) ,
+		'where'  => "$key=". _quote( $val ) ,
 	];
 	return is_array( $select )
 		? array_values( (array)$o_dbs[$dbname]->qar( $sql )[0] )
@@ -570,7 +570,7 @@ function _fn( $type, $i = '', $s1 = '' ) {
 /*
 function _e2j( $term, $str = ' (<>)' ) {
 	if ( L_EN ) return;
-	$s = _json_cache( DN_DATA . '/ids/term_e2j.json.gz' )->{ strtolower($term) };
+	$s = _json_cache( DN_DATA. '/ids/term_e2j.json.gz' )->{ strtolower($term) };
 	if ( $s == '' ) return;
 	return strtr( $str, [ '<>' => _imp( $s ) ] );
 }
@@ -591,7 +591,7 @@ function _chemform2html( $in ) {
 		if ( $t == '-' || $t == '+' ) {
 			//- 電荷？（上付きに）
 			$num = abs( $l );
-			$ret .= '<sup>' . $t . ( $num > 1 ? $num : '' ) . '</sup>' ;
+			$ret .= '<sup>'. $t. ( $num > 1 ? $num : '' ). '</sup>' ;
 		} else {
 			//- 元素名+数（下付に）
 			preg_match( '/([A-Za-z]+)([0-9]*)/', $l, $a );
@@ -608,7 +608,7 @@ function _chemform2html( $in ) {
 function _pubmed_abst( $j ) {
 	$ret = [];
 	foreach ( (array)$j as $k => $v )
-		$ret[] = ( ctype_digit( $k ) ? '' : "<b>$k</b>: " ) . $v;
+		$ret[] = ( ctype_digit( $k ) ? '' : "<b>$k</b>: " ). $v;
 	return implode( '<br>', $ret );
 }
 
@@ -675,7 +675,7 @@ function _js() {
 		$ret .= _instr( ';', $n ) //- セミコロンがあったらjsコード、なければ名称
 			? _js_comment('direct'). $n
 			: _js_comment( $n )
-			 . ( TEST ? file_get_contents( "jsprec/$n.js" ) : JS_SOURCE_SET[ $n ] )
+			. ( TEST ? file_get_contents( "jsprec/$n.js" ) : JS_SOURCE_SET[ $n ] )
 		;
 	}
 	return "<script>\n$ret\n</script>\n";
@@ -688,8 +688,8 @@ function _jslib() {
 	$s1 = "<script src=\"";
 	$s2 = "\"></script>\n";
 
-//	$ret = $s1 . 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' . $s2;
-//	$ret = $s1 . 'http://code.jquery.com/jquery-1.6.3.min.js' . $s2;
+//	$ret = $s1. 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'. $s2;
+//	$ret = $s1. 'http://code.jquery.com/jquery-1.6.3.min.js'. $s2;
 	$ret = $s1 
 		. "//code.jquery.com/jquery-2.2.4.min.js"
 //		. '//code.jquery.com/jquery-3.2.1.min.js' //- jquery-UI に問題
@@ -712,7 +712,7 @@ function _jslib() {
 	foreach ( _armix( func_get_args() ) as $s ) {
 		$ret .= _instr( '<', $s )
 			? $s
-			: $s1 . ( $a[ $s ] ?: $s ) . $s2
+			: $s1. ( $a[ $s ] ?: $s ). $s2
 		;
 	}
 	return $ret;
@@ -764,7 +764,7 @@ function _css() {
 function _die( $a ) {
 	if ( is_array( $a ) || is_object( $a ) )
 		$a = print_r( $a, 1 );
-	die( _p( '強制終了' ) . _t( 'pre', $a ) );
+	die( _p( '強制終了' ). _t( 'pre', $a ) );
 }
 
 //.. _redirect: リダイレクト
@@ -819,8 +819,8 @@ function _mkdir( $d ) {
 
 //. 変数・定数の定義
 
-//$emdbidlist = _file( DN_DATA . '/emdbidlist.txt' );
-//$pdbidlist  = _file( DN_DATA . '/pdbidlist.txt'  );
+//$emdbidlist = _file( DN_DATA. '/emdbidlist.txt' );
+//$pdbidlist  = _file( DN_DATA. '/pdbidlist.txt'  );
 
 //.. 検索用 latestデータの名前
 $latest_name = [
@@ -856,7 +856,7 @@ define( 'URL_PDBJ', _instr( 'pdbj.org', $_SERVER[ 'SERVER_NAME' ] ) ? ".." : '//
 
 //.. jmol
 define( 'JMOLPATH', TESTSV
-	? end( glob( '_jmol/jmol*' ) ) . '/jsmol'
+	? end( glob( '_jmol/jmol*' ) ). '/jsmol'
 	: '../jmol/jsmol'
 );
 
@@ -980,8 +980,8 @@ $_filenames += [
 	,
 
 	//- sas
-	'sasbdb_json'	=> DN_DATA . '/sas/json/<id>.json.gz' ,
-	'sasbdb_img'	=> DN_DATA . '/sas/img/<id>.jpg' ,
+	'sasbdb_json'	=> DN_DATA. '/sas/json/<id>.json.gz' ,
+	'sasbdb_img'	=> DN_DATA. '/sas/img/<id>.jpg' ,
 
 	//- pubmed
 	'pubmed'		=> DN_DATA		. "/pubmed/<id>.json" ,
@@ -1009,7 +1009,7 @@ $_comptime = [];
 $a = _tsv_load2( 'data/term.tsv' );
 define( 'TERM_E', $a['e'] );
 define( 'TERM_J', $a['j'] );
-define( 'TERM_REP', $a['rep_' . _ej( 'e', 'j' ) ] ); 
+define( 'TERM_REP', $a['rep_'. _ej( 'e', 'j' ) ] ); 
 
 $j = '';
 foreach ( _file( 'data/j2e.txt' ) as $line )  {
@@ -1049,7 +1049,7 @@ _add_lang([
 ]);
 
 define( 'LOADING', _span( '.loadingbar', _img( '', 'loading.g' ) ) );
-define( 'LOADINGT', _p( LOADING . _ej( 'Loading...', '読み込み中...' ) ) );
+define( 'LOADINGT', _p( LOADING. _ej( 'Loading...', '読み込み中...' ) ) );
 _jsvar([
 	'loading' => LOADINGT ,
 	'loadingerror'	=> _span( '.red', _ej( ' error?', ' エラー?' ) ) ,
@@ -1467,13 +1467,13 @@ function _simple_out( $a ) {
 
 	//.. autocomp
 /*
-	$j = _json_load2( DN_DATA . '/autocomp.json.gz' );
+	$j = _json_load2( DN_DATA. '/autocomp.json.gz' );
 	$e = COLOR_MODE == 'emn';
 	$autocomp = _t( 'datalist | #acomp_kw', $j->kw );
 	if ( $e )
 		$autocomp .= _t( 'datalist | #acomp_em', $j->kw_em );
 	if ( $auth_autocomp ) {
-		$autocomp .= _t( 'datalist | #acomp_an' . ( $e ? '_em' : '' ) ,
+		$autocomp .= _t( 'datalist | #acomp_an'. ( $e ? '_em' : '' ) ,
 			$e ? $j->an_em : $j->an 
 		);
 	}
@@ -1489,7 +1489,7 @@ function _simple_out( $a ) {
 	]);
 	if ( _instr( '|', $title ) ) {
 		$a = explode( '|', (string)$title );
-		$title_color = _span( '.ttcol1', $a[0] ) . _span( '.ttcol2', $a[1] ) . $a[2];
+		$title_color = _span( '.ttcol1', $a[0] ). _span( '.ttcol2', $a[1] ). $a[2];
 		$title = implode( '', $a );
 		if ( is_string( $css ) )
 			$css = [ $css ];
@@ -1527,14 +1527,14 @@ function _simple_out( $a ) {
 			_t( $pk,
 				COLOR_MODE == 'emn'
 				? _a( '.' ,
-					IC_EMN . _span( 'itemprop="title"', 'EM Navigator' ) ,
+					IC_EMN. _span( 'itemprop="title"', 'EM Navigator' ) ,
 					'itemprop="url"' 
 				)
 				: _a( 'quick.php',
-					IC_YM . _span( 'itemprop="title"', _l( 'Yorodumi', '万見' ) ) ,
+					IC_YM. _span( 'itemprop="title"', _l( 'Yorodumi', '万見' ) ) ,
 					'itemprop="url"' 
 				)
-			) . _t( 'ul', $s ) 
+			). _t( 'ul', $s ) 
 		);
 	}
 
@@ -1542,7 +1542,7 @@ function _simple_out( $a ) {
 		//- PDBj
 		_t( $pk, _ab(
 			_url( 'pdbj' ),
-			IC_PDBJ . _span( 'itemprop="title"', 'PDBj' ), 
+			IC_PDBJ. _span( 'itemprop="title"', 'PDBj' ), 
 			'itemprop="url"' ) 
 		)
 		//- 以下
@@ -1553,7 +1553,7 @@ function _simple_out( $a ) {
 	//... サーチ
 /*	$item_search = _t( 'form |.topline | method:get | action:ysearch.php', ''
 		.LI
-		. _a( 'ysearch.php', _ic( 'lens' ) . _ej( 'Cross-search', '横断検索' ) )
+		. _a( 'ysearch.php', _ic( 'lens' ). _ej( 'Cross-search', '横断検索' ) )
 		. ': '
 		. _e( 'input| .acomp| type:search| name:kw| list:acomp_kw| size:15' )
 	);
@@ -1571,9 +1571,9 @@ function _simple_out( $a ) {
 		[ 'pap.php?em=1'	, 'EM Papers'			, 'EMN文献' 			, 'article' ] ,
 		[ 'doc.php?tag=emn'	, 'About EM Navigator'	, 'EM Navigatorについて'	, 'help' ] ,
 	] as $a ) {
-		$p .= LI. _a( $a[0], _ic( $a[3] ) . _ej( $a[1], $a[2] ), '.nw'  );
+		$p .= LI. _a( $a[0], _ic( $a[3] ). _ej( $a[1], $a[2] ), '.nw'  );
 	}
-	$item_emn = _a( '.', IC_EMN . 'EM Navigator' ) .' '. _pop( $plus, $p );	
+	$item_emn = _a( '.', IC_EMN. 'EM Navigator' ) .' '. _pop( $plus, $p );	
 
 	$p = '';
 	foreach ([
@@ -1583,19 +1583,19 @@ function _simple_out( $a ) {
 		[ 'doc.php?tag=ym'	, 'About Yorodumi'		, '万見について'	, 'help' ] ,
 
 	] as $a ) {
-		$p .= LI. _a( $a[0], _ic( $a[3] ) . _ej( $a[1], $a[2] ), '.nw'  );
+		$p .= LI. _a( $a[0], _ic( $a[3] ). _ej( $a[1], $a[2] ), '.nw'  );
 	}
-	$item_ym = _a( 'quick.php', _ic( 'miru') . _ej( 'Yorodumi', '万見 (Yorodumi)' ) )
+	$item_ym = _a( 'quick.php', _ic( 'miru'). _ej( 'Yorodumi', '万見 (Yorodumi)' ) )
 		.' '. _pop( $plus, $p );
 
 	$item_omo = _a( 'omo-search.php',
-			_ic( 'omokage' ) . _ej( 'Omokage search', 'Omokage検索' ) 
+			_ic( 'omokage' ). _ej( 'Omokage search', 'Omokage検索' ) 
 		)
 		.' '
 		. _pop( $plus,
 			LI. _a(
 				'doc.php?tag=omo', 
-				IC_HELP . _ej( 'About Omokage search', 'Omokage検索について' )
+				IC_HELP. _ej( 'About Omokage search', 'Omokage検索について' )
 			)
 		)
 	;
@@ -1608,9 +1608,9 @@ function _simple_out( $a ) {
 		[ '?tag=about'	, 'Pages'		, 'ページ一覧'	] ,
 
 	] as $a )
-		$p .= LI. _a( 'doc.php' . $a[0], IC_HELP . _ej( $a[1], $a[2] ), '.nw' );
+		$p .= LI. _a( 'doc.php'. $a[0], IC_HELP. _ej( $a[1], $a[2] ), '.nw' );
 
-	$item_doc = _a( 'doc.php', _ic('help') . _ej( 'News&docs', 'お知らせ・ヘルプ' ) )
+	$item_doc = _a( 'doc.php', _ic('help'). _ej( 'News&docs', 'お知らせ・ヘルプ' ) )
 		.' '. _pop( _fa( 'plus-square', 'large' ), $p );
 	
 	
@@ -1620,7 +1620,7 @@ function _simple_out( $a ) {
 		. LI. $item_omo
 		. LI. $item_doc
 		. ( TEST
-			? LI . _a( '_mng.php', 'mng' )
+			? LI. _a( '_mng.php', 'mng' )
 			: ''
 		)
 	;
@@ -1629,8 +1629,8 @@ function _simple_out( $a ) {
 	//.. about
 	if ( is_array( $_about ) ) {
 		 _simple_hdiv(
-		 	_ic( 'help' ) . _ej( "About $title", $title . 'について' ) ,
-		 	_t( 'ul', '<li>' . implode( '<li>', $_about ) ) ,
+		 	_ic( 'help' ). _ej( "About $title", $title. 'について' ) ,
+		 	_t( 'ul', '<li>'. implode( '<li>', $_about ) ) ,
 			[ 'hide' => ! $openabout, 'id' => 'about' ]
 		);
 	}
@@ -1651,7 +1651,7 @@ function _simple_out( $a ) {
 		if ( $news != '' ) {
 			$about .= _simple_hdiv(
 				'News',
-				$news . _p( _ab( 'doc.php?type=news', _ej( 'Read more', 'すべてのお知らせ' ) ) ) ,
+				$news. _p( _ab( 'doc.php?type=news', _ej( 'Read more', 'すべてのお知らせ' ) ) ) ,
 				[ 'type' => 'h2',  ] 
 			);
 		}
@@ -1667,7 +1667,7 @@ function _simple_out( $a ) {
 	
 	if ( $about != '' ) {
 		 _simple_hdiv(
-		 	_ic( 'help' ) . _ej( "About $title", $title . 'について' ) ,
+		 	_ic( 'help' ). _ej( "About $title", $title. 'について' ) ,
 		 	$about
 		 	. _p( _ab( "doc.php?tag=$newstag", _ej( 'Read more', '他の情報も見る' ) ) )
 		 	,
@@ -1676,7 +1676,7 @@ function _simple_out( $a ) {
 	}
 	
 	//.. toplinks
-//	$toplinks = _t( 'ul', $item_pankuzu. $item_search . $item_pages  . $item_links );
+//	$toplinks = _t( 'ul', $item_pankuzu. $item_search. $item_pages . $item_links );
 	$a = [];
 	$l = _fa('external-link');
 	foreach ([
@@ -1697,9 +1697,9 @@ function _simple_out( $a ) {
 	$langlink = L_EN
 		? '' 
 			. '<b>[English]</b> '
-			. _a( "$top?" . http_build_query( [ 'lang' => 'ja' ] + $_GET ), '日本語' )
+			. _a( "$top?". http_build_query( [ 'lang' => 'ja' ] + $_GET ), '日本語' )
 		: ''
-			. _a( "$top?" . http_build_query( [ 'lang' => 'en' ] + $_GET ), "English" )
+			. _a( "$top?". http_build_query( [ 'lang' => 'en' ] + $_GET ), "English" )
 			. ' <b>[日本語]</b> '
 	;
 
@@ -1711,12 +1711,12 @@ function _simple_out( $a ) {
 		$item_omo ,
 		$item_doc ,
 		BR,
-//		_a( $urls[ 'pdbj' ]		, IC_PDBJ . 'Protein Databank Japan (PDBj)' ) ,
-//		_a( $urls[ 'pdbj' ] . '/help/'	, _ic( 'help' ) . _ej( 'PDBj Help', 'PDBj ヘルプ' )  ),
-//		_a( $urls[ 'pdbj' ] . '/contact/' , _ic( 'contact' )
+//		_a( $urls[ 'pdbj' ]		, IC_PDBJ. 'Protein Databank Japan (PDBj)' ) ,
+//		_a( $urls[ 'pdbj' ]. '/help/'	, _ic( 'help' ). _ej( 'PDBj Help', 'PDBj ヘルプ' )  ),
+//		_a( $urls[ 'pdbj' ]. '/contact/' , _ic( 'contact' )
 //			. _ej( 'Contact us', 'お問い合わせ' ) ),
 
-		_ab( 'https://binds.jp', _fa('external-link') . 'AMED-BINDS' )
+		_ab( 'https://binds.jp', _fa('external-link'). 'AMED-BINDS' )
 		BR,
 		_a( 'doc.php?id=developer',
 			_ej( 'Developed by ', '開発者: ' )
@@ -1753,7 +1753,7 @@ function _simple_out( $a ) {
 
 	$_ext_column .=  _div( '#menubox | .extcol_item_outer hide', ''
 		. _btn( '.closebtn | !_extcol.menu(0)', 'X' )
-		. _p( _span( '!_extcol.menu(0)', _fa( 'bars', 'white' ) . _ej( 'Menu', 'メニュー' )  ) )
+		. _p( _span( '!_extcol.menu(0)', _fa( 'bars', 'white' ). _ej( 'Menu', 'メニュー' )  ) )
 		. _div( '.extcol_item_inner', ''
 
 			//- このページ
@@ -1765,28 +1765,28 @@ function _simple_out( $a ) {
 
 			//- このサイト
 			. _simple_hdiv(
-				_fa( 'link' ) . _ej( 'External links', 'リンク' ) ,
+				_fa( 'link' ). _ej( 'External links', 'リンク' ) ,
 				$toplinks ,
 				[ 'type' => 'h2' ]
 			)
 
 			//- オプション
 			. _simple_hdiv(
-				_fa('gear') . _ej( 'Options', 'オプション' ), ''
+				_fa('gear'). _ej( 'Options', 'オプション' ), ''
 				. _t( 'ul', ''
 					.LI. $langlink
 /*
-					.LI. _ej( 'Structure viewers', '構造ビューア' ) . BR
+					.LI. _ej( 'Structure viewers', '構造ビューア' ). BR
 					. _viewer_selector( 'mol' )
 					. BR
 					. _viewer_selector( 'map' )
 */					. ': '
 					.LI. _ej( 'Font size', '文字の大きさ' )
-					. _sizebtn( 'ss', ' fsizebtn| #fsize0 | !_fsize(0)|' . $da[0] )
-					. _sizebtn( 's' , ' fsizebtn| #fsize1 | !_fsize(1)|' . $da[1] )
-					. _sizebtn( 'm' , ' fsizebtn| #fsize2 | !_fsize(2)|' . $da[2] )
-					. _sizebtn( 'l' , ' fsizebtn| #fsize3 | !_fsize(3)|' . $da[3] )
-					. _sizebtn( 'll', ' fsizebtn| #fsize4 | !_fsize(4)|' . $da[4] )
+					. _sizebtn( 'ss', ' fsizebtn| #fsize0 | !_fsize(0)|'. $da[0] )
+					. _sizebtn( 's' , ' fsizebtn| #fsize1 | !_fsize(1)|'. $da[1] )
+					. _sizebtn( 'm' , ' fsizebtn| #fsize2 | !_fsize(2)|'. $da[2] )
+					. _sizebtn( 'l' , ' fsizebtn| #fsize3 | !_fsize(3)|'. $da[3] )
+					. _sizebtn( 'll', ' fsizebtn| #fsize4 | !_fsize(4)|'. $da[4] )
 				
 				)
 				,
@@ -1820,7 +1820,7 @@ function _simple_out( $a ) {
 
 	//.. 出力
 	echo DOCTYPE
-		. _t( 'title', _ifnn( $sub, "$sub - " ) . $title )
+		. _t( 'title', _ifnn( $sub, "$sub - " ). $title )
 		. $favicon
 		. $_meta
 		. '<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">'
@@ -1834,13 +1834,13 @@ function _simple_out( $a ) {
 				. _div( '#top_opt', $langlink
 					. BR
 					. _btn( '#btn_menu_pop |!_extcol.menu(1)',
-						_ic( 'menu' ) . _ej( 'menu', 'メニュー' ) )
+						_ic( 'menu' ). _ej( 'menu', 'メニュー' ) )
 
 				)
-				. _a( '.', $icon32 . $title_color, '#simple_top_title' )
+				. _a( '.', $icon32. $title_color, '#simple_top_title' )
 /*
 				. _pop(
-					$icon32 . $title_color ,
+					$icon32. $title_color ,
 					$toplinks , 
 					[ 'trgopt' => '#simple_top_title', 'js' => '_acomp.init()' ]
 				)
@@ -1911,7 +1911,7 @@ function _icon_title( $in, $icon = '' ) {
 			: ( ICONS_FOR_H1[ $title ] ? _ic( ICONS_FOR_H1[ $title ] ) : '' )
 		)
 		. (	function_exists( '_trep' ) ? _trep( $title, [ 'tag' => $tag ]) : _l( $title ) )
-		. ( $sub ? ' ' . trim( $sub ) : '' )
+		. ( $sub ? ' '. trim( $sub ) : '' )
 //		. ( "[$tag]" )
 	;
 }
@@ -1965,9 +1965,9 @@ function _simple_hdiv( $h1cont, $div_cont, $opt = [] ) {
 
 	$ret .= _t( "$type | #h_$id | !_hdiv.oc('$id'$o)" , ''
 		. _div( "#oc_btn_$id | .oc_btn ", $hide ? '+' : '-' )
-		. $h1str . $h1add
+		. $h1str. $h1add
 	)
-	. _div( "#oc_div_$id | .oc_div$cls" . _atr_data( 'js', $js ), $div_cont )
+	. _div( "#oc_div_$id | .oc_div$cls". _atr_data( 'js', $js ), $div_cont )
 	;
 
 	//- 自動出力/return
@@ -2038,7 +2038,7 @@ function _simple_tabs() {
 
 		//- js: 開いた時に実行するスクリプト
 		if ( $js != '' )
-			$js = ",'" . strtr( htmlspecialchars( $js ), [ "'" => "\\'" ] ) . "'";
+			$js = ",'". strtr( htmlspecialchars( $js ), [ "'" => "\\'" ] ). "'";
 
 		$tabs .= _btn(
 			"#tabbtn_{$gid}_{$id} |type:button | .tabbtn tabbtn_$gid $d| !_tab.s('$gid','$id'$js)"
@@ -2052,7 +2052,7 @@ function _simple_tabs() {
 	}
 	return _div( '', ''
 //		. _t( 'p|.tabp_pre hide', $tabstr )
-		. _p( '.tabp', $tabstr . _span('.wrap hide', BR) . $tabs )
+		. _p( '.tabp', $tabstr. _span('.wrap hide', BR). $tabs )
 		. $divs
 	);
 }
@@ -2077,7 +2077,7 @@ function _chkbox( $label, $opt, $flg = false ) {
 		$opt = "#$id|$opt";
 	}
 	return _span( '.nw', 
-		_e( "input| type:checkbox| $opt" . ( $flg ? '|checked:checked' : '' ) )
+		_e( "input| type:checkbox| $opt". ( $flg ? '|checked:checked' : '' ) )
 		. _t( "label| for:$id", _l( $label ) )
 	);
 }
@@ -2142,7 +2142,7 @@ function _li_many( $items, $num = 4 ) {
 	$n = $cnt - $num;
 	$li = _e( 'li| .more hide' );
 	return _t( "ul| #ulm_$id", ''
-		.LI . implode( LI , array_slice( $items, 0, $num ) )
+		.LI. implode( LI , array_slice( $items, 0, $num ) )
 		.$li. implode( $li, array_slice( $items, $num ) )
 	)
 	. _btn( "!_limany('$id',1)| #more_$id",
@@ -2198,8 +2198,8 @@ function _table_2col( $cont, $o = [] ) {
 		if ( is_array( $td ) )
 			$td = _imp2( $td );
 		$ret .=  $topth
-			 ? TR_TOP	. TH . $th . TH . $td
-			 : TR 		. TH . $th . TD . $td
+			 ? TR_TOP	. TH. $th. TH. $td
+			 : TR 		. TH. $th. TD. $td
 		;
 		$topth = false;
 	}
@@ -2217,8 +2217,8 @@ function _table_3col( $cont, $o = [] ) {
 			$td[] = is_array( $a ) ? _imp2( $a ) : $a;
 		$th = _l( $th );
 		$ret .=  $topth
-			 ? TR_TOP . TH . $th . TH . implode( TH, $td )
-			 : TR	  . TH . $th . TD . implode( TD, $td )
+			 ? TR_TOP. TH. $th. TH. implode( TH, $td )
+			 : TR	 . TH. $th. TD. implode( TD, $td )
 		;
 		$topth = false;
 	}
@@ -2233,7 +2233,7 @@ function _idinput( $id, $opt = [] ) {
 	extract( $opt ); //- $btnlabel, $size, $action, $posttext, $acomp
 
 	return 	_t(
-		"form | #id_form | method:get" . _attr( 'action', $action )
+		"form | #id_form | method:get". _attr( 'action', $action )
 		, ''
 		. _e( "input| type:search | name:$name | #idbox"
 			. _attr( 'size', $size )
@@ -2242,10 +2242,10 @@ function _idinput( $id, $opt = [] ) {
 			. _attr( 'value', strip_tags( $id ) )
 
 			//- 自動補完
-			. ( $acomp == '' ? '' : '|.acomp|list:acomp_' . $acomp )
+			. ( $acomp == '' ? '' : '|.acomp|list:acomp_'. $acomp )
 		)
 		. ( ! defined( 'IMG_MODE' ) ? '' :
-			_e( "input| type:hidden | name:img_mode| value:" . IMG_MODE )
+			_e( "input| type:hidden | name:img_mode| value:". IMG_MODE )
 		)
 		. _e( "input| type:submit | .submitbtn | value:". ( $btnlabel ?: 'Submit' ) )
 	)
@@ -2298,32 +2298,32 @@ function _time( $name = 'time' ) {
 function _atr_data( $k, $v ) {
 	return $v == ''
 		? ''
-		: "|data-$k=\"" . htmlspecialchars(
+		: "|data-$k=\"". htmlspecialchars(
 			is_string( $v ) ? $v : json_encode( $v )
-	) . '"';
+	). '"';
 }
 
 //.. _atr_js
 function _atr_js( $v ) {
 	return $v == ''
 		? ''
-		: "|!" . htmlspecialchars( $v ) . '"'
+		: "|!". htmlspecialchars( $v ). '"'
 	;
 }
 //.. _attr
 function _attr( $k, $v ) {
-	return $v == '' ? '' : "|$k=\"" . htmlspecialchars( $v ) . '"';
+	return $v == '' ? '' : "|$k=\"". htmlspecialchars( $v ). '"';
 }
 
 //.. _local_link サイト内リンク
 function _local_link( $ar ) {
 	if ( array_keys( $ar ) == [0, 1] ) //- _url関数の短縮
 		return _url( $ar[0], $ar[1] );
-	$php = $ar[0] ? $ar[0] . '.php' : '';
-	$sharp = $ar['#'] ? '#' . $ar['#']: '';
+	$php = $ar[0] ? $ar[0]. '.php' : '';
+	$sharp = $ar['#'] ? '#'. $ar['#']: '';
 	unset( $ar[0], $ar['#'] );
 	return ( $_SERVER['PHP_SELF'] == $php ? '' : $php )
-		.'?'. http_build_query( array_filter( $ar ) ) . $sharp;
+		.'?'. http_build_query( array_filter( $ar ) ). $sharp;
 }
 
 //. function - doc
@@ -2341,7 +2341,7 @@ function _doc_hdiv( $docid, $opt = [] ) {
 		$a = [];
 		foreach ( $doc[ 'rel' ] as $d )
 			$a[] = _doc_pop( $d );
-		$related = _p( '.small', DOC_RELATED . _imp2( $a ) );
+		$related = _p( '.small', DOC_RELATED. _imp2( $a ) );
 	}
 
 	//- 画像
@@ -2361,7 +2361,7 @@ function _doc_hdiv( $docid, $opt = [] ) {
 	//- url: そのページのAboutの場合は、URLは書かない
 	$url = $nourl ? '' : $doc[ 'url' ];
 	if ( $url ) {
-		$url = _p( 'URL: ' . _ab( $url, _fullurl( $url ) ) );
+		$url = _p( 'URL: '. _ab( $url, _fullurl( $url ) ) );
 	}
 
 	//- 文章
@@ -2390,7 +2390,7 @@ function _doc_hdiv( $docid, $opt = [] ) {
 			//- 関連情報
 			. $related
 			//- 外部リンク
-			. ( $l == '' ? '' : _p( '.small', DOC_LINK . $l ) )
+			. ( $l == '' ? '' : _p( '.small', DOC_LINK. $l ) )
 			,
 			$o
 		);
@@ -2405,7 +2405,7 @@ function _doc_pop( $docid, $opt = [] ) {
 	return _pop_ajax(
 		$label != ''
 			? $label
-			: ( $noicon ? '' : IC_HELP ) . DOC_JSON[ $docid ][ L_EN ? 'e' : 'j' ][ 't' ]
+			: ( $noicon ? '' : IC_HELP ). DOC_JSON[ $docid ][ L_EN ? 'e' : 'j' ][ 't' ]
 		,
 		[ 'mode' => 'doc', 'id' => $docid ]
 	);
@@ -2423,7 +2423,7 @@ function _doc_div( $docid ) {
 		extract( $doc[ L_EN ? 'e' : 'j' ] );
 		return implode( array_filter([
 			//- タイトル
-			'<b>' . ( $url ? _ab( $url, $t ) : $t ) . '</b>' ,
+			'<b>'. ( $url ? _ab( $url, $t ) : $t ). '</b>' ,
 
 			//- 概要かコンテンツ
 			$s ?: $c ?: 'no document' , 
@@ -2438,7 +2438,7 @@ function _doc_div( $docid ) {
 			,
 			//- 詳細へのリンク
 			_ab([ '@' => 'doc', 'id' => $docid ],
-				IC_HELP . _ej( 'Read more', '詳細を読む' )
+				IC_HELP. _ej( 'Read more', '詳細を読む' )
 			)
 		]), BR );
 	}
@@ -2455,7 +2455,7 @@ function _keywords( $kw ) {
 		$t = trim( $t, ", \n\r\t" );
 		$ret[] = _pop_ajax(
 			IC_KEY. ( _obj('wikipe')->term($t)->icon() )
-			. $t . _ifnn( _obj('wikipe')->e2j(), ' (\1)' ) ,
+			. $t. _ifnn( _obj('wikipe')->e2j(), ' (\1)' ) ,
 			[ 'mode' => 'kw', 'kw' => $t ]
 		);
 	}
