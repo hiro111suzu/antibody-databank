@@ -267,8 +267,8 @@ _simple_out([
 //.. _l
 function _l( $in ) {
 	return L_EN
-		? TERM_E[ $in ] ?: TERM_J2E[ $in ] ?: $in
-		: TERM_J[ $in ] ?: TERM_E2J[ $in ] ?: $in
+		? ( TERM_E[ $in ] ?: TERM_J2E[ $in ] ?: $in )
+		: ( TERM_J[ $in ] ?: TERM_E2J[ $in ] ?: $in )
 	;
 }
 

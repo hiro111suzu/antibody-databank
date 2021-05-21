@@ -1,8 +1,12 @@
 <?php
+//. 初期設定
 date_default_timezone_set("Asia/Tokyo"); 
+//error_reporting(E_ALL ^ E_NOTICE);
+//ini_set('display_errors', 1);
+
 //ini_set('display_errors', 'stderr');
 //error_reporting(E_ALL);
-//	ini_set( 'error_reporting', E_ALL & ~E_NOTICE );
+//ini_set( 'error_reporting', E_ALL & ~E_NOTICE );
 //define( 'SPEED_TEST', true );
 
 if ( ! defined( 'AJAX' ) )
@@ -14,12 +18,11 @@ require( __DIR__. '/common-all.php' );
 
 $_sqlite_log = [];
 
-//. クラス
+//.. 自動ロード
 spl_autoload_register( function( $class_name ) {
 	require_once $class_name. '.php';
 });
 
-//. 初期設定
 
 //.. 時間計測
 define( 'TIME_START', $time_prev = microtime( TRUE ) );
@@ -229,7 +232,7 @@ function _format_bytes( $b ) {
 function _kv( $a, $del = SEP ) {
 	//- $del: デリミタ
 	$ret = [];
-	foreach ( $a as $k => $v ) {
+	foreach ( (array)$a as $k => $v ) {
 		if ( $k == '_d' ) {
 			$del = $v;
 			continue;
