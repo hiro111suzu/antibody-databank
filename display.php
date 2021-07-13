@@ -49,6 +49,7 @@ define( 'GET_APPL'	, $a == 'all' ? '' : $a );
 
 define( 'GET_KW'	, _getpost_safe( 'kw' ) );
 define( 'GET_PAGE'	, (integer)_getpost( 'pagen' )  );
+define( 'GET_UNP'	, _getpost( 'unp' ) );
 
 $a = $_GET;
 unset( $a['lang'] );
@@ -91,6 +92,11 @@ foreach ( $data as $num => $item ) {
 		continue;
 	}
 	if ( GET_APPL != '' && ! _instr( GET_APPL, _imp( $item['application'] ) ) ) {
+		unset( $data[ $num ] );
+		continue;
+	}
+
+	if ( GET_UNP && $item['unp_id'] && ! in_array( GET_UNP, $item['unp_id'] ) ) {
 		unset( $data[ $num ] );
 		continue;
 	}
