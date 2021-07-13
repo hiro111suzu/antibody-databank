@@ -96,7 +96,7 @@ foreach ( $data as $num => $item ) {
 		continue;
 	}
 
-	if ( GET_UNP && $item['unp_id'] && ! in_array( GET_UNP, $item['unp_id'] ) ) {
+	if ( GET_UNP && !in_array( GET_UNP, (array)$item['unp_id'] ) ) {
 		unset( $data[ $num ] );
 		continue;
 	}
